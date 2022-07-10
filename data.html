@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="mainShell.py">
+    <title>Elementalist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    .description {
+        font-size: 120%;
+        margin-top: 16%;
+        margin-left: 26%;
+    }
+
+    .enterElement {
+        font-size: 120%;
+        border-radius: 7px;
+        border: black;
+
+    }
+
+    .labelSymbol {
+        font-size: 120%;
+        margin-left: 26%;
+    }
+
+    .abtrennung {
+        margin-left: 26%;
+        font-size: 120%;
+    }
+
+</style>
+
+<body>
+    <script>
+        //List of all symbols
+        const Elemente = ["H", "Li", "Na", "K", "Rb", "Cs", "Fr", "Be", "Mg", "Ca", "Sr", "Ba", "Ra", "B", "Al", "Ga", "In", "Tl", "C", "Si", "Ge",
+            "Sn", "Pb", "N", "P", "As", "Sb", "Bi", "O", "S", "Se", "Te", "Po", "F", "Cl", "Br", "I", "At", "He", "Ne", "Ar", "Kr", "Xe", "Rn"]
+
+        //List of all elements
+        const Elemente_name = ["Hydrogen", "Lithium", "Sodium", "Potassium", "Rubidium", "Cesium", "Francium", "Beryllium", "Magnesium", "Calcium", "Strontium", "Barium", "Radium", "Boron", "Aluminum", "Gallium", "Indium", "Thallium", "Carbon", "Silicon",
+            "Germanium", "Tin", "Lead", "Nitrogen", "Phosphorus", "Arsenic", "Antimony", "Bismuth", "Oxygen", "Sulfur", "Selenium", "Tellurlum", "Polonium", "Flourine", "Chlorine", "Bromine", "lodine", "Astatine", "Helium", "Neon", "Argon", "Kypton", "Xenon", "Radon"]
+
+        //List of all main groups
+        const Hauptgruppe = ["1", "1", "1", "1", "1", "1", "1", "2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "4", "4", "4",
+            "4", "4", "5", "5", "5", "5", "5", "6", "6", "6", "6", "6", "7", "7", "7", "7", "7", "8", "8", "8", "8", "8", "8"]
+
+        //List of all atomic numbers
+        const Ordnungszahl = ["1", "3", "11", "19", "37", "55", "87", "4", "12", "20", "38", "56", "88", "5", "13", "31", "49", "81", "6", "14", "32",
+            "50", "82", "7", "15", "33", "51", "83", "8", "16", "34", "52", "84", "9", "17", "35", "53", "85", "2", "10", "18", "36", "54", "86"]
+
+        //List of Electronegativity values
+        const En = ["2.2", "0.98", "0.93", "0.82", "0.82", "0.79", "0.7", "1.57", "1.31", "1.0", "0.95", "0.89", "0.89", "2.04", "1.61", "1.81", "1.78", "1.62", "2.55", "1.9", "2.01",
+            "1.96", "2.33", "3.04", "2.19", "2.18", "2.05", "2.02", "3.44", "2.58", "2.55", "2.66", "2.0", "3.98", "3.16", "2.96", "2.1", "2.2", "/", "/", "/", "/", "/", "/"]
+
+        //List of atomic density
+        const Dichte = ["0.09", "0.53", "0.97", "0.86", "1.53", "1.90", "?", "1.85", "1.74", "1.55", "2.63", "3.59", "5.50", "2.46", "2.70", "5.90", "7.31", "11.85", "2.26", "2.34", "5.32",
+            "7.26", "11.35", "1.25", "2.69", "5.73", "6.70", "9.75", "1.43", "2.07", "4.82", "6.25", "9.20", "1.70", "3.21", "3.12", "4.94", "?", "0.18", "0.90", "1.78", "3.75", "5.90", "9.73"]
+
+        //List of main group 1
+        const hg1 = ["H = Hydrogen", "Li = Lithium", "Na = Sodium", "K = Potassium", "Rb = Rubidium", "Cs = Cesium", "Fr = Francium"]
+
+        //List of main group 2
+        const hg2 = ["Be = Beryllium", "Mg = Magnesium", "Ca = Calcium", "Sr = Strontium", "Ba = Barium", "Ra = Radium"]
+
+        //List of main group 3
+        const hg3 = ["B = Boron", "Al = Aluminium", "Ga = Gallium", "In = Indium", "Ti = Thallium"]
+
+        //List of main group 4
+        const hg4 = ["C = Carbon", "Si = Silicon", "Ge = Germanium", "Sn = Tin", "Pb = Lead"]
+
+        //List of main group 5
+        const hg5 = ["N = Nitrogen", "P = Phosphorus", "As = Arsenic", "Sb = Antimony", "Bi = Bismuth"]
+
+        // List of main group 6
+        const hg6 = ["O = Oxygen", "S = Sulfur", "Se = Selenium", "Te = Tellurium", "Po = Polonium"]
+
+        //List of main group 7
+        const hg7 = ["F = Flourine", "Cl = Chlorine", "Br = Bromine", "I = Iodine", "At = Astatine"]
+
+        //List of main group 8
+        const hg8 = ["He = Helium", "Ne = Neon", "Ar = Argon", "Kr = Krypton", "Xe = Xenon", "Rn = Radon"]
+
+        function recieveData() {
+            var x = document.getElementById("enteredSymbol").value;
+            var y = Elemente.indexOf(x);
+            document.getElementById("Element").innerHTML = "Element: " + Elemente_name[y];
+            document.getElementById("Symbol").innerHTML = "Symbol: " + Elemente[y];
+            document.getElementById("mainGroup").innerHTML = "Main Group: " + Hauptgruppe[y];
+            document.getElementById("atomicNumber").innerHTML = "Atomic Number: " + Ordnungszahl[y];
+            document.getElementById("Electronegativity").innerHTML = "Electronegativity value: " + En[y];
+            document.getElementById("Density").innerHTML = "Density: " + Dichte[y];
+        }
+
+    </script>
+    <span><a class="backButton" href="/index.html">Back</a></span>
+    <p class="description">In this program you can enter an element symbol and you will recieve <br> most of the most
+        important data of the element. <br> Note: Elements have to be written in the right upper/lower cases!</p>
+    <div>
+        <label for="enteredSymbol" class="labelSymbol">Enter element symbol:</label>
+        <input type="text" class="enterElement" id="enteredSymbol" name="enteredSymbol">
+        <button type="button" onclick=recieveData()>Submit</button>
+        <p class="abtrennung">--------------------------------------------------------</p>                                                                                                                                                                                        </p>
+        <p class="solution" id="Element"></p>
+        <p class="solution" id="Symbol"></p>
+        <p class="solution" id="mainGroup"></p>
+        <p class="solution" id="atomicNumber"></p>
+        <p class="solution" id="Electronegativity"></p>
+        <p class="solution" id="Density"></p>
+    </div>
+</body>
+
+</html>

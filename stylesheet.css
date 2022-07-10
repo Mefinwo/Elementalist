@@ -1,0 +1,348 @@
+body {
+  background-image: linear-gradient(to top, orangered, coral);
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.solution {
+  margin-left: 26%;
+  font-size: 120%;
+}
+
+.indexBoxes {
+  display: flex;
+}
+
+.infoText {
+  background-color: #E9967A;
+  border: solid #999 5px;
+  border-radius: 8px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-right: 70%;
+  overflow-y: scroll;
+  font-size: 140%;
+  height: 15%;
+  width: 15%;
+}
+
+.socials {
+  background-color: #E9967A;
+  border: solid #999 5px;
+  border-radius: 8px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  overflow-y: scroll;
+  height: 15%;
+  width: 15%;
+}
+
+.socials a {
+  /*background-color: #4a4a4d;
+  z-index: 2;
+  border: #000000 solid 3px;*/
+  border-radius: 4px;
+  text-align: center;
+  font-family: chemie;
+  font-size: 120%;
+  cursor: pointer;
+  /*color: blanchedalmond;
+  text-decoration-line: none;*/  
+}
+
+.discord {
+  text-decoration-line: none;
+}
+
+br {
+  display: block;
+  margin: 10px 0;
+}
+
+.wrapper {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: 30%;
+  text-align: center;
+  width: 24%;
+  height: 24%;
+}
+
+.circle {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #32AAEE;
+  display: block;
+  box-shadow: 0px 10px 5px #32AAEE;
+}
+
+#text {
+  font: Arial;
+  font-size: 170px;
+  font-weight: solid;
+  color: #32AAEE;
+}
+
+.listButton {
+  font-style: italic;
+  padding-top:0.5%;
+  background-color: 0090CA;
+  top: 58%;
+  left: 24%;
+  width: 7%;
+  height: 7%;
+  position: absolute;
+  z-index: 2;
+  border: #000000 solid 3px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: chemie;
+  font-size: 1em;
+  cursor: pointer;
+  color: blanchedalmond;
+  text-decoration-line: none;
+  text-overflow:clip;
+  text-size-adjust: auto;
+
+
+  background-repeat: no-repeat;
+  background-position: -120px -120px, 0 0;
+
+  background-image: -webkit-linear-gradient(top left,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+  background-image: -moz-linear-gradient(0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+  background-image: -o-linear-gradient(0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+  background-image: linear-gradient(0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+
+  -moz-background-size: 250% 250%, 100% 100%;
+  background-size: 250% 250%, 100% 100%;
+
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -o-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+}
+
+.listButton:hover {
+  background-position: 0 0, 0 0;
+
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.dataButton {
+  font-style: italic;
+  padding-top:0.5%;
+  background-color: 0090CA;
+  top: 58%;
+  left: 47%;
+  width: 7%;
+  height: 7%;
+  position: absolute;
+  z-index: 2;
+  border: #000000 solid 3px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: chemie;
+  font-size: 93%;
+  cursor: pointer;
+  color: blanchedalmond;
+  text-decoration-line: none;
+  text-overflow:clip;
+  text-size-adjust: auto;
+
+  background-repeat: no-repeat;
+  background-position: -120px -120px, 0 0;
+
+  background-image: -webkit-linear-gradient(top left,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+  background-image: -moz-linear-gradient(0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+  background-image: -o-linear-gradient(0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+  background-image: linear-gradient(0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+
+  -moz-background-size: 250% 250%, 100% 100%;
+  background-size: 250% 250%, 100% 100%;
+
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -o-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+}
+
+.dataButton:hover {
+  background-position: 0 0, 0 0;
+
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.chargeButton {
+  font-style: italic;
+  padding-top:0.5%;
+  background-color: 0090CA;
+  top: 58%;
+  left: 70%;
+  width: 7%;
+  height: 7%;
+  position: absolute;
+  z-index: 2;
+  border: #000000 solid 3px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: chemie;
+  font-size: 90%;
+  cursor: pointer;
+  color: blanchedalmond;
+  text-decoration-line: none;
+  text-overflow:"";
+  text-size-adjust: auto;
+
+  background-repeat: no-repeat;
+  background-position: -120px -120px, 0 0;
+
+  background-image: -webkit-linear-gradient(top left,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+  background-image: -moz-linear-gradient(0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+  background-image: -o-linear-gradient(0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+  background-image: linear-gradient(0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+
+  -moz-background-size: 250% 250%, 100% 100%;
+  background-size: 250% 250%, 100% 100%;
+
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -o-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+}
+
+.chargeButton:hover {
+  background-position: 0 0, 0 0;
+
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.backButton {
+  font-style:italic;
+  background-color: 0090CA;
+  top: 7%;
+  left: 3%;
+  width: 7%;
+  height: 7%;
+  position: absolute;
+  z-index: 2;
+  border: #000000 solid 3px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: chemie;
+  font-size: 28px;
+  cursor: pointer;
+  color: blanchedalmond;
+  text-decoration-line: none;
+
+  background-repeat: no-repeat;
+  background-position: -120px -120px, 0 0;
+
+  background-image: -webkit-linear-gradient(top left,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+  background-image: -moz-linear-gradient(0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+  background-image: -o-linear-gradient(0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+  background-image: linear-gradient(0 0,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 37%,
+      rgba(255, 255, 255, 0.8) 45%,
+      rgba(255, 255, 255, 0.0) 50%);
+
+  -moz-background-size: 250% 250%, 100% 100%;
+  background-size: 250% 250%, 100% 100%;
+
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -o-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+}
+
+.backButton:hover {
+  background-position: 0 0, 0 0;
+
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.textField {
+  margin-top: 11%;
+  margin-left: 23.7%;
+  border-radius: 25px;
+  border: #000000;
+  border-width: 25px;
+
+}
+
+.printList {
+  margin-top: 16%;
+  margin-left: 27%;
+  font-size: 90%;
+}
